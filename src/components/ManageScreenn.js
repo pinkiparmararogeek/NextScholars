@@ -8,30 +8,29 @@ import { useNavigate } from 'react-router-dom';
  
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 export default function ManageScreen() {
-    const navigate = useNavigate();
+   const navigate = useNavigate();
 
   const handleNavigateToCart = () => {
     navigate('/CartPage');
   };
   return (
-    <div className="min-h-screen relative overflow-hidden p-4 ">
+    <div className="min-h-screen relative overflow-hidden ">
       {/* Background Image with Reduced Opacity */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-10"
-        style={{ backgroundImage: `url('bgimage.jpg')` }}
+        className="absolute inset-0 bg-cover bg-center opacity-30"
+        style={{ backgroundImage: `url('/images/background_image.jpg')` }}
       ></div>
-
  
  
       {/* Logo top left */}
       <img
-        src="/images/Media.jpg"
+        src="/images/logo.jpg"
         alt="Logo"
-        className="absolute top-8 left-64 w-32 md:w-48 z-10     "
+        className="absolute top-8 left-64 w-32 md:w-48 z-10 "
       />
  
       {/* Manage text centered horizontally */}
-      <p className="absolute top-8 left-1/2 transform -translate-x-1/2 text-2xl font-bold text-gray-700 z-10">
+      <p className="absolute top-8 left-1/2 transform -translate-x-1/2 text-5xl font-bold text-gray-700 z-10">
         Manage
       </p>
  
@@ -278,5 +277,4 @@ export default function ManageScreen() {
     </div>
   );
 }
- 
  
