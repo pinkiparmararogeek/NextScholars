@@ -45,14 +45,14 @@ export default function LoginScreen() {
           Login with Google
         </button>
 
-<div className="flex items-center gap-4 my-6">
+<div className="flex items-center gap-4">
   <div className="flex-grow h-px bg-gray-400"></div>
-  <p className="text-base text-gray-400 whitespace-nowrap">OR LOGIN WITH USERNAME</p>
+  <p className="text-base text-gray-400 whitespace-nowrap">OR LOD AT WITH USERNAME</p>
   <div className="flex-grow h-px bg-gray-400"></div>
 </div>
 
         {/* Username */}
-        <div className="mb-4">
+        <div className="my-4">
           <label className="block text-sm font-medium mb-1 text-gray-400">Username/Email</label>
           <input
             type="text"
@@ -73,16 +73,16 @@ export default function LoginScreen() {
 <div className="flex justify-between items-center mt-4">
   <div className="flex items-center gap-2">
     <input type="checkbox" className="accent-[#f8a825]" />
-    <p className="text-sm font-normal text-gray-400">Keep me logged in</p>
+    <p className="text-sm font-normal text-gray-600">Keep me logged in</p>
   </div>
-  <p className="text-sm font-normal text-gray-400 cursor-pointer hover:text-gray-600 transition">
+  <p className="text-sm font-normal text-gray-600 cursor-pointer hover:text-gray-600 transition">
     Forgot Password?
   </p>
 </div>
 
       
-<div className="flex justify-center mt-4">
-  <button className="bg-[#f8a825] text-white py-2 px-20 rounded-full hover:brightness-110 transition">
+<div className="flex justify-center mt-10">
+  <button className="bg-[#f8a825] text-white text-base font-medium py-2 px-20 rounded-full hover:brightness-110 transition">
     Login
   </button>
 </div>
@@ -91,8 +91,8 @@ export default function LoginScreen() {
       </div>
 
       <div className="py-4">
-        <p className='text-white'>Need Help?</p>
-        <p><span className='text-gray-800'>You are not a member?</span><span className='text-white'> Register</span></p>
+        <p className='text-white text-base font-medium'>Need Help?</p>
+        <p><span className='text-gray-800 text-base font-medium'>You are not a member?</span><span className='text-white text-base font-medium'> Register</span></p>
       </div>
       </div>
     </div>
